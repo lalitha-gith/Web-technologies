@@ -1,0 +1,30 @@
+<!DOCTYPE HMTL>
+<html>
+<style type="text/css">
+#date-time{
+position:fixed;
+bottom:0;
+right:0;
+}
+body{
+background-image:url(https://i.pinimg.com/originals/6f/9e/e4/6f9ee451dacd4b60649b9006551ff92f.jpg)}
+
+</style>
+<body bgcolor="lightblue">
+<button id="date-time"></button>
+<script>
+function updateTime(){
+var now=new Date();
+var dateTime=now.toLocaleString();
+document.getElementById("date-time").innerHTML=dateTime;
+}
+setInterval(updateTime,1000);
+</script>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Anits_logo.jpg" align="left" height="130" width="200">
+<center><h1>ANITS</h1>
+<h2>Anil Neerukonda Institute Of Technology & Sciences(Autonomous)</h2>
+<marquee width="60%" direction="left" height="100px">AU Affiliated</marquee>
+</center>
+</body>
+</html>

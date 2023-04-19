@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>  
+<head>
+<title>Sign up for facebook</title>
+    <style>
+        body{
+            
+        }
+	.tdLabel{
+		padding:10px;
+		align:center;
+		color:#4B0082;
+    
+}
+.rd:hover{
+    background-color: burlywood;
+}
+.des{
+background-color:#4CAF50 ;
+color:#ffffff ;
+padding:2px;
+border:none;
+text-align:center;s
+}
+    </style>
+</head>
+<body> 
+
+<center>
+<h1><i>Sign up</i></h1>
+<form  action="validate.php" method="post">  
+<table >  
+<tr>  
+    <td class="tdLabel"><label for="register_name" class="label">First name:</label></td>  
+    <td><input class="rd" type="text" name="fname" value="" id="register_name" /></td>  
+</tr>  
+<tr>  
+    <td class="tdLabel"><label for="registe_name" class="label">Last name:</label></td>  
+    <td><input class="rd" type="text" name="lname" value="" id="registe_name" /></td>  
+</tr> 
+
+<tr>  
+    <td class="tdLabel"><label for="phn" class="label">Contact no:</label></td>  
+    <td><input class="rd" type="number" name="phn" value="" id="phn" /></td>  
+</tr>  
+<tr>  
+<tr>   
+
+    <td class="tdLabel"><label for="register_password" class="label">Enter password:</label></td>  
+    <td><input  class="rd" type="password" name="password" id="register_password" /></td>  
+</tr>  
+<tr>  
+    <td class="tdLabel"><label for="register_email" class="label">Enter Email:</label></td>  
+    <td  
+><input class="rd" type="email" name="email" value="" id="register_email" /></td>  
+</tr>  
+<tr>  
+    <td class="tdLabel"><label for="register_gender" class="label">Enter Gender:</label></td>  
+    <td>  
+<input type="radio" name="gender" id="register_gendermale" value="male"/>  
+<label for="register_gendermale">male</label>  
+<input type="radio" name="gender" id="register_genderfemale" value="female"/>  
+<label for="register_genderfemale">female</label>  
+    </td>  
+</tr>  
+
+<tr>  
+    <td colspan="2"><div align="center"><input class="des" type="submit" id="register_0" value="register" name="register"/>  
+</div></td>  
+</tr>  
+</table>  
+</form>  
+<div class="log">
+<a href="main2.php">Already have an account</a>
+</div>
+</center>
+</body>
+</html>  
+
+ 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+  
+    <style>
+    html {
+      color:#000000;
+        font-family: sans-serif;
+    }
+      
+    body {
+background-image:url(https://149764666.v2.pressablecdn.com/wp-content/uploads/2022/07/mm170-scaled.jpg);
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+    }
+    </style>
+    <script >
+       
+      // random value generated
+      var y = Math.floor(Math.random() * 100 + 1);
+  
+      // counting the number of guesses
+      // made for correct Guess
+      var guess = 1;
+  
+     
+        function che(){
+        // number guessed by user    
+          var x = document.fro.inp.value;
+          
+         
+            var x = document.fro.inp.value;
+          if(x == y)
+          {    
+            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                  + guess + " GUESS ");
+                  return true;
+          }
+          else if(x > y) /* if guessed number is greater than actual number*/
+          {    
+            guess++;
+            alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+            return false;
+          }
+          else
+          {
+            guess++;
+            alert("OOPS SORRY!! TRY A GREATER NUMBER")
+            return false;
+          }
+      }
+       
+      
+    </script>
+</head>
+  
+<body>
+    <h1>Guess The Number</h1>
+    <p>
+        We have selected a random number between 1 - 100. 
+            See if you can guess it.
+      </p>
+  
+        <form name="fro" onsubmit="return che()">
+        <label for="guess_input">Enter a guess: </label>
+        <input type = "number" 
+                 id = "guess_input" 
+                 name="inp"
+               class = "guessField">
+        <input type = "submit" 
+              
+               id = "submitguess">
+       </form>
+  
+    
+</body>
+</html>  

@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>forms</title>
+<link rel="stylesheet" href="style.css">
+<style>
+h1{
+text-align:center;
+font-size:50px;
+color:red;
+}
+
+body{
+
+background-image:url(https://www.arca24.com/en/wp-content/uploads/2022/02/form-register-arca24.jpg);
+font-weight:100px;
+font-family:sans-serif;
+}
+
+input{
+border-color:coral;
+background-color:beige;
+padding-bottom:10px;
+margin:10px;
+width:70%;
+height:50%;
+text-align:center;
+padding-top:5px;
+}
+.hr{
+align:center;
+}
+.edu{
+width:190px;
+height:30px;
+margin-left:10px;
+border-color:coral;
+background-color:beige;
+border-width:2px;
+text-align:center;
+}
+.gen{
+width:auto;
+}
+
+
+</style>
+
+</head>
+<body>
+<h1>REGISTRATION</h1>
+<form class="hr" name="f1" action="" method="post">
+<table>
+<tr><td>NAME:</td>
+<td><input type="text" placeholder="Enter your firstname"></td>
+</tr>
+<tr><td>LastName:</td>
+<td><input type="text" placeholder="Enter your lastname"></td>
+</tr>
+<tr><td>Education:</td>
+<td><select class="edu">
+1.<option>B.Tech</option>
+2.<option>BCom</option>
+s
+</select></td>
+</tr>
+<tr><td>Email:</td>
+<td><input type="email"></td>
+</tr>
+<tr><td>Password:</td>
+<td><input type="password"></td>
+</tr>
+<tr><td>DOB:</td>
+<td><input type="date"></td>
+</tr>
+<tr><td>Gender:</td>
+<td><input class="gen" type="radio" name="gen">M</td>
+<td><input class="gen" type="radio" name="gen">F</td>
+</tr>
+
+
+<tr>
+<td>Submit:</td>
+<td><input class="sub" type="submit"></td>
+<td>Reset:</td>
+<td><input class="sub" type="reset"></td>
+</table>
+</form>
+</body>
+</html>
